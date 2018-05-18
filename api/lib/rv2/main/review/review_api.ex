@@ -1,12 +1,12 @@
-defmodule Reviewedo.Main.ReviewAPI do
+defmodule Rv2.Main.ReviewAPI do
   @moduledoc """
   Provides an API for all functions relating to review signups
   """
   defmacro __using__(_) do
     quote do
 
-      alias Reviewedo.{Repo}
-      alias Reviewedo.Main.{Review}
+      alias Rv2.{Repo}
+      alias Rv2.Main.{Review}
       alias Ecto.{Changeset}
 
       @doc """

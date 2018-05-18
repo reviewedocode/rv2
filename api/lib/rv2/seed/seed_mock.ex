@@ -1,8 +1,8 @@
-defmodule Mix.Tasks.Reviewedo.SeedMock do
+defmodule Mix.Tasks.Rv2.SeedMock do
 
   @moduledoc """
     This file handles seeding mock data.
-    It is a mix task so can be run from terminal with `$ mix Reviewedo.SeedMock`
+    It is a mix task so can be run from terminal with `$ mix Rv2.SeedMock`
 
     Mock data is for testing the application in development or in
     the staging environment. The task is run by review apps in the postdeploy
@@ -24,8 +24,8 @@ defmodule Mix.Tasks.Reviewedo.SeedMock do
   or in development environment
   """
   def seed_mock do
-    is_dev? = Application.get_env(:reviewedo, :env) == :dev
-    is_staging? = Application.get_env(:reviewedo, :IS_STAGING)
+    is_dev? = Application.get_env(:rv2, :env) == :dev
+    is_staging? = Application.get_env(:rv2, :IS_STAGING)
     if is_staging? || is_dev? do
       Logger.info "Seeding mock data"
     end

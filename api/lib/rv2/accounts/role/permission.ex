@@ -1,10 +1,10 @@
-defmodule Reviewedo.Accounts.Permission do
+defmodule Rv2.Accounts.Permission do
   @moduledoc """
   Permission Schema
   """
   use Ecto.Schema
   import Ecto.Changeset
-  alias Reviewedo.Accounts.{Permission, Role}
+  alias Rv2.Accounts.{Permission, Role}
 
   schema "permissions" do
     field :name, :string

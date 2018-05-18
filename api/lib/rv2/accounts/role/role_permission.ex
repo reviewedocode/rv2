@@ -1,4 +1,4 @@
-defmodule Reviewedo.Accounts.RolePermission do
+defmodule Rv2.Accounts.RolePermission do
 
   @moduledoc """
   RolePermission lookup table schema
@@ -6,7 +6,7 @@ defmodule Reviewedo.Accounts.RolePermission do
 
   use Ecto.Schema
   import Ecto.Changeset
-  alias Reviewedo.Accounts.{Role, Permission, RolePermission}
+  alias Rv2.Accounts.{Role, Permission, RolePermission}
 
   @primary_key false
   schema "role_permissions" do

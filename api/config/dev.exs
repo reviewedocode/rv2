@@ -44,3 +44,11 @@ config :rv2, Rv2.Repo,
   database: "rv2_dev",
   hostname: "localhost",
   pool_size: 10
+
+  # Guardian
+  config :guardian, Guardian,
+    secret_key: "0RXmgrNZAkjJEHgn1559sZRfxIZwsgkzwqeyLmo8ga81nDKqIMf2gv+whZOlmSan",
+    issuer: "Rv2",
+    ttl: {30, :days},
+    verify_issuer: true,
+    serializer: Sling.GuardianSerializer

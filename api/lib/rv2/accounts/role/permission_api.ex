@@ -1,13 +1,13 @@
-defmodule Reviewedo.Accounts.PermissionAPI do
+defmodule Rv2.Accounts.PermissionAPI do
 
   @moduledoc """
-  Provides an API for dealing with the `Reviewedo.Accounts.Permission` resource
+  Provides an API for dealing with the `Rv2.Accounts.Permission` resource
   """
 
     import Ecto.Query, warn: false
 
-    alias Reviewedo.Repo
-    alias Reviewedo.Accounts.Permission
+    alias Rv2.Repo
+    alias Rv2.Accounts.Permission
 
     def get_by_name(name) do
       Repo.get_by(Permission, name: name)
@@ -18,7 +18,7 @@ defmodule Reviewedo.Accounts.PermissionAPI do
     returns a list of permisssion structs:
 
     [
-      %Reviewedo.Accounts.Permission{
+      %Rv2.Accounts.Permission{
         __meta__: #Ecto.Schema.Metadata<:loaded, "permissions">,
         id: 1,
         name: "can_create_offer",

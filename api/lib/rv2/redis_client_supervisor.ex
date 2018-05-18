@@ -1,11 +1,11 @@
-defmodule Reviewedo.RedisClientSupervisor do
+defmodule Rv2.RedisClientSupervisor do
 
   @moduledoc """
   Initiates Redis
   """
   use Supervisor
 
-  alias Reviewedo.Accounts.Cache
+  alias Rv2.Accounts.Cache
 
   def start_link do
     Supervisor.start_link(__MODULE__, [])

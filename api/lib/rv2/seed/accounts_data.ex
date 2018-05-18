@@ -1,11 +1,11 @@
-defmodule Reviewedo.Seed.AccountsData do
+defmodule Rv2.Seed.AccountsData do
   @moduledoc """
     This file stores default seed data that should be loaded into every build
     regardless of environment.
 
     ## Warning this data can not be edited or deleted. Only added to.
     When the need for editing data arrives, we need to re-write the
-    seed helper functions in `Reviewedo.Seed.Accounts`
+    seed helper functions in `Rv2.Seed.Accounts`
   """
 
   @doc """
@@ -41,7 +41,7 @@ defmodule Reviewedo.Seed.AccountsData do
 
   @doc """
   Do not edit or delete as it will result in duplicates.
-  If you need to edit/delete, then re-write `Reviewedo.Seed.Accounts`
+  If you need to edit/delete, then re-write `Rv2.Seed.Accounts`
   inserting functions
   """
   def roles do

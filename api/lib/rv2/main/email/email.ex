@@ -1,10 +1,10 @@
-defmodule Reviewedo.Main.Email do
+defmodule Rv2.Main.Email do
   @moduledoc """
   Email list
   """
   use Ecto.Schema
   import Ecto.Changeset
-  alias Reviewedo.Main.Email
+  alias Rv2.Main.Email
 
   schema "emails" do
     field :email, :string

@@ -1,12 +1,12 @@
-defmodule Reviewedo.Main.EmailAPI do
+defmodule Rv2.Main.EmailAPI do
   @moduledoc """
   Provides an API for all functions relating to email signups
   """
   defmacro __using__(_) do
     quote do
 
-      alias Reviewedo.{Repo}
-      alias Reviewedo.Main.{Email}
+      alias Rv2.{Repo}
+      alias Rv2.Main.{Email}
       alias Ecto.{Changeset}
 
       @doc """
