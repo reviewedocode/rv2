@@ -1,13 +1,13 @@
-defmodule Reviewedo.Accounts.RoleAPI do
+defmodule Rv2.Accounts.RoleAPI do
 
   @moduledoc """
-  Provides an API for dealing with the `Reviewedo.Accounts.Role` resource
+  Provides an API for dealing with the `Rv2.Accounts.Role` resource
   """
 
   import Ecto.Query, warn: false
 
-  alias Reviewedo.Repo
-  alias Reviewedo.Accounts.{Role, Permission, RolePermission}
+  alias Rv2.Repo
+  alias Rv2.Accounts.{Role, Permission, RolePermission}
 
   @doc """
   get a role by id
@@ -31,7 +31,7 @@ defmodule Reviewedo.Accounts.RoleAPI do
   returns a list of role structs:
 
   [
-    %Reviewedo.Accounts.Role{
+    %Rv2.Accounts.Role{
       __meta__: #Ecto.Schema.Metadata<:loaded, "roles">,
       id: 1,
       name: "super_admin",

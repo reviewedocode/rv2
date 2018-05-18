@@ -1,6 +1,6 @@
-defmodule Reviewedo.Utils do
+defmodule Rv2.Utils do
   @moduledoc """
-  Utils for Reviewedo
+  Utils for Rv2
   """
 
   @doc """

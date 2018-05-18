@@ -1,12 +1,12 @@
-defmodule Reviewedo.Accounts.UserAPI do
+defmodule Rv2.Accounts.UserAPI do
   @moduledoc """
   Provides an API for all functions relating to users
   """
   defmacro __using__(_) do
     quote do
 
-      alias Reviewedo.{Repo}
-      alias Reviewedo.Accounts.{User, Role}
+      alias Rv2.{Repo}
+      alias Rv2.Accounts.{User, Role}
       alias Ecto.{Changeset}
 
       @doc """

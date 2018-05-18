@@ -1,12 +1,12 @@
-defmodule Reviewedo.Accounts.User do
+defmodule Rv2.Accounts.User do
 
   @moduledoc """
   Provides user schema and changeset functionality
   """
   use Ecto.Schema
   import Ecto.Changeset
-  alias Reviewedo.Accounts.{User, Role}
-  alias Reviewedo.Main.{Review}
+  alias Rv2.Accounts.{User, Role}
+  alias Rv2.Main.{Review}
   alias Comeonin.Bcrypt
 
   schema "users" do

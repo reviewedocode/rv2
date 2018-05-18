@@ -1,8 +1,8 @@
-defmodule Mix.Tasks.Reviewedo.Seed do
+defmodule Mix.Tasks.Rv2.Seed do
 
   @moduledoc """
     This file handles seeding of data in all environments.
-    It is a mix task so can be run from terminal with `$ mix Reviewedo.Seed`
+    It is a mix task so can be run from terminal with `$ mix Rv2.Seed`
 
     Seed data is split into default and mock.
 
@@ -14,9 +14,9 @@ defmodule Mix.Tasks.Reviewedo.Seed do
   """
 
   use Mix.Task
-  alias Reviewedo.Seed.Accounts
-  alias Reviewedo.Repo
-  alias Reviewedo.Main.Company
+  alias Rv2.Seed.Accounts
+  alias Rv2.Repo
+  alias Rv2.Main.Company
   require Logger
 
   # required function for a Mix.Task
@@ -45,7 +45,7 @@ defmodule Mix.Tasks.Reviewedo.Seed do
     default_seed()
 
     # seed super admin users
-    # Reviewedo.Accounts.Seed.super_admins()
+    # Rv2.Accounts.Seed.super_admins()
   end
 
   def default_seed do

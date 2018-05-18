@@ -1,13 +1,13 @@
-defmodule Reviewedo.Seed.Accounts do
+defmodule Rv2.Seed.Accounts do
 
   @moduledoc """
     This file provides an API for seeding all account info
-    `Reviewedo.Seed.AccountsData` contains the seed data we always want to seed.
+    `Rv2.Seed.AccountsData` contains the seed data we always want to seed.
   """
 
-  alias Reviewedo.{Repo, Seed}
-  alias Reviewedo.Accounts.{Permission, PermissionAPI, Role, RoleAPI}
-  alias Reviewedo.Seed.AccountsData
+  alias Rv2.{Repo, Seed}
+  alias Rv2.Accounts.{Permission, PermissionAPI, Role, RoleAPI}
+  alias Rv2.Seed.AccountsData
 
   @doc """
   This function gets called by the outer world. Seeds all default accounts data.

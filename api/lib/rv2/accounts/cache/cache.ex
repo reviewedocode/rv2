@@ -1,4 +1,4 @@
-defmodule Reviewedo.Accounts.Cache do
+defmodule Rv2.Accounts.Cache do
   @moduledoc """
   Provides cache functionality
   """

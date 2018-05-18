@@ -1,10 +1,10 @@
-defmodule Reviewedo.Main do
+defmodule Rv2.Main do
   @moduledoc """
   The Main context.
   """
 
   import Ecto.Query, warn: false
-  alias Reviewedo.{Main}
+  alias Rv2.{Main}
 
   # Import modules below
   use Main.EmailAPI

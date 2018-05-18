@@ -1,9 +1,9 @@
-defmodule Reviewedo.Accounts do
+defmodule Rv2.Accounts do
   @moduledoc """
   The Accounts context.
   """
   import Ecto.Query, warn: false
-  alias Reviewedo.{Accounts}
+  alias Rv2.{Accounts}
 
   # Import modules below
   use Accounts.CacheAPI

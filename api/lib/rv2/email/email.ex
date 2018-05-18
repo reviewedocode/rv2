@@ -1,11 +1,11 @@
-defmodule Reviewedo.Email do
+defmodule Rv2.Email do
   @moduledoc """
   The Email context.
   """
-  use Bamboo.Phoenix, view: ReviewedoWeb.EmailView
+  use Bamboo.Phoenix, view: Rv2Web.EmailView
 
-  alias ReviewedoWeb.{LayoutView}
-  alias Reviewedo.{Utils, Mailer, Accounts, Accounts.Cache}
+  alias Rv2Web.{LayoutView}
+  alias Rv2.{Utils, Mailer, Accounts, Accounts.Cache}
 
   def send_text_email(recipient, subject, url, template, assigns \\ []) do
     new_email()

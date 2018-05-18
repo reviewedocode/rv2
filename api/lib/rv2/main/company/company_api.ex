@@ -1,12 +1,12 @@
-defmodule Reviewedo.Main.CompanyAPI do
+defmodule Rv2.Main.CompanyAPI do
   @moduledoc """
   Provides an API for all functions relating to companies
   """
   defmacro __using__(_) do
     quote do
 
-      alias Reviewedo.{Repo}
-      alias Reviewedo.Main.{Company}
+      alias Rv2.{Repo}
+      alias Rv2.Main.{Company}
       alias Ecto.{Changeset}
 
       @doc """

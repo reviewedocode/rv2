@@ -1,8 +1,8 @@
-defmodule Reviewedo.Main.Review do
+defmodule Rv2.Main.Review do
   use Ecto.Schema
   import Ecto.Changeset
-  alias Reviewedo.Main.{Review, Company}
-  alias Reviewedo.Accounts.{User}
+  alias Rv2.Main.{Review, Company}
+  alias Rv2.Accounts.{User}
 
   schema "reviews" do
     field :comment, :string

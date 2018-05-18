@@ -1,11 +1,11 @@
-defmodule Reviewedo.Accounts.CacheAPI do
+defmodule Rv2.Accounts.CacheAPI do
 
   @moduledoc """
   Provides an API for cache functionality
   """
   defmacro __using__(_) do
     quote do
-      alias Reviewedo.{Accounts.Cache, Utils}
+      alias Rv2.{Accounts.Cache, Utils}
 
       @doc """
       Returns email from cache if it exists.
