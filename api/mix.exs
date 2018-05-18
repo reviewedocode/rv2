@@ -38,7 +38,18 @@ defmodule Rv2.Mixfile do
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:comeonin, "~> 3.0.2"},
+      {:bamboo, "~> 0.7.0"},
+      {:bamboo_smtp, "~> 1.2.1"},
+      {:mock, "~> 0.3.1", only: :test},
+      {:redix, ">= 0.6.1"},
+      {:ex_aws, "~> 1.1.5"},
+      {:poison, "~> 2.2.0"},
+      {:hackney, "~> 1.8.6"},
+      {:uuid, "~> 1.1.8"},
+      {:httpoison, "~> 0.11.2"},
+      {:credo, "~> 0.8", only: [:dev, :test], runtime: false}
     ]
   end
 
